@@ -1,0 +1,41 @@
+<div class="panel" ng-controller="CustViewController">
+    <div class="panel-body">
+        <div class="col-sm-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">修改财务信息</div>
+                <div class="panel-body">
+                    <form role="form">
+                        <div class="form-group">
+                            <label class="control-label">收款人：</label>
+                            <input type="text" class="form-control" placeholder="" ng-model="cust.payee">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">银行：</label>
+                            <input type="text" class="form-control" placeholder="" ng-model="cust.bank">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">卡号：</label>
+                            <input type="text" class="form-control" placeholder="" ng-model="cust.cardNo">
+                        </div>
+                        <div class="form-group">
+                            <label class="control-label">开户行：</label>
+                            <input type="text" class="form-control" placeholder="" ng-model="cust.bankOfDeposit">
+                        </div>
+                        <div class="form-group">
+                            <button type="button" class="btn btn-primary" ng-click="modifyFinancial()">修改</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-8">
+            <div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
+                <div class="panel-heading">温馨提示：</div>
+                <div class="panel-body">
+                    <div class="col-sm-8">{{errmsg}}</div>
+                    <div class="col-sm-2"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

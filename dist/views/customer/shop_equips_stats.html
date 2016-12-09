@@ -1,0 +1,35 @@
+<div class="panel panel-default" ng-controller="EquipStatisticsViewController">
+    <div class="panel-heading">设备收入情况</div>
+    <div class="panel-body">
+        <div class="col-sm-12" ng-show="errmsg != null && errmsg != ''">{{errmsg}}</div>
+        <div class="col-sm-12" ng-show="errmsg == null || errmsg == ''">
+            <table class="table table-striped">
+                <thead>
+                <tr>
+                    <th>设备编号</th>
+                    <th>所属店铺</th>
+                    <th>安放地址</th>
+                    <th>当天收入</th>
+                    <th>当月收入</th>
+                    <th>本年收入</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="a in pageData">
+                    <td>{{a.equipId}}</td>
+                    <td>{{getShopName(a.shopId)}}</td>
+                    <td>{{a.address}}</td>
+                    <td>{{a.dprice == null ? 0 : a.dprice}}元</td>
+                    <td>{{a.mprice == null ? 0 : a.mprice}}元</td>
+                    <td>{{a.yprice == null ? 0 : a.yprice}}元</td>
+                </tr>
+                </tbody>
+            </table>
+            <nav class="text-center" ng-show="totalPage.length > 1">
+                <ul class="pagination">
+                    <li ng-repeat="t in totalPage"><a href="" ng-click="go(t)">{{t+1}}</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,35 @@
+<div class="header">
+	<div class="header__logo"><span><img src="/images/admin/login-logo.png" alt=""></span></div>
+</div>
+<div class="signup-main" ng-controller="SignupViewController">
+	<div class="signup-container">
+		<div class="container signup">
+			<div class="row">
+				<div class="col-sm-12 text-center"><h4 style="height: 60px;line-height: 60px;">注册尚米乐新用户</h4></div>
+			</div>
+			<div class="row" ng-show="!success" style="margin-left: 10%;margin-right: 10%;">
+				<div class="row" ng-show="!isEmpty(errmsg)">
+					<div class="col-sm-12">温馨提示：<span class="errmsg">{{errmsg}}</span></div>
+				</div>
+			</div>
+			<div class="row" style="margin-left: 10%;margin-right: 10%;">
+				<input type="text" ng-model="user.uid" class="form-control signup__input" placeholder="请输入注册帐号" />
+				<input type="password" ng-model="user.pwd1" class="form-control signup__input" placeholder="请输入密码" />
+				<input type="password" ng-model="user.pwd2" class="form-control signup__input" placeholder="请再次输入密码" />
+				<input type="text" ng-model="user.telephone" class="form-control signup__input" placeholder="请输入你的联系方式" />
+				<div class="signup__input-split"></div>
+				<input type="text" ng-model="user.name" class="form-control signup__input" placeholder="请输入你的姓名" />
+				<input type="text" ng-model="user.shopName" class="form-control signup__input" placeholder="请输入你的店名" />
+				<input type="text" ng-model="user.shopAddress" class="form-control signup__input" placeholder="请输入你的店铺位置" />
+			</div>
+			<div class="row"  style="margin-left: 10%;margin-right: 10%;">
+				<div class="signup-btn"><a href="" ng-click="signup()">注册</a></div>
+				<div class="link-login"><a href="#/login">已经有帐号，直接登录</a></div>
+			</div>
+			<div class="row" ng-show="success">
+				<div class="col-sm-12">恭喜你，注册帐号成功!!<a href="#/login">登录</a></div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="login-footer"><span> 京公网安备 11000002000088号</span></div>

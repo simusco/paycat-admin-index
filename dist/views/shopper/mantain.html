@@ -1,0 +1,18 @@
+<style type="text/css">
+    body{background-color: #f0f0f0;}
+</style>
+<div class="container-7 main"  ng-controller="SettingViewController">
+    <div class="c7-span-1">
+        <div class="main-right" style="float: right;">
+            <div class="s_menu">
+                <a ui-sref=".assign_machine_shop" class="s_menu_item" ui-sref-active="s_menu_item--active">分配机器<img src="/images/admin/s_menu_icon.png"/></a>
+                <a ui-sref=".price" class="s_menu_item" ui-sref-active="s_menu_item--active">设定价格<img src="/images/admin/s_menu_icon.png"/></a>
+                <a ui-sref=".waiter" class="s_menu_item" ui-sref-active="s_menu_item--active">服务人员<img src="/images/admin/s_menu_icon.png"/></a>
+            </div>
+        </div>
+    </div>
+    <div class="c7-span-6-last" style="position:relative;">
+        <div class="main-left" ui-view>
+        </div>
+    </div>
+</div>

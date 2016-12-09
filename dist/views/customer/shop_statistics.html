@@ -1,0 +1,38 @@
+<div class="container-fluid"  ng-controller="ShopStatisticsViewController">
+    <div class="panel panel-default">
+        <div class="panel-heading">店铺收入情况</div>
+        <div class="panel-body">
+            <div class="col-sm-12" ng-show="errmsg == null || errmsg == ''">
+                <span class="text-success">当天总收入：{{todayTotal}}元，当月总收入：{{monthTotal}}元</span>
+            </div>
+        </div>
+        <div class="panel-body">
+            <div class="col-sm-12" ng-show="errmsg != null && errmsg != ''">{{errmsg}}</div>
+            <div class="col-sm-12" ng-show="errmsg == null || errmsg == ''">
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th width="40%">店铺名称</th>
+                        <th width="30%">当天收入</th>
+                        <th width="30%">当月收入</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr ng-repeat="a in pageData">
+                        <td><a href="" ng-click="showEquipStatsOfShop(a.shopId)">{{a.shopName}}</a></td>
+                        <td>{{a.dprice == null ? 0 : a.dprice}}元</td>
+                        <td>{{a.mprice == null ? 0 : a.mprice}}元</td>
+                    </tr>
+                    </tbody>
+                </table>
+                <nav class="text-center" ng-show="totalPage.length > 1">
+                    <ul class="pagination">
+                        <li ng-repeat="t in totalPage"><a href="" ng-click="go(t)">{{t+1}}</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        <div class="panel-body" ui-view>
+        </div>
+    </div>
+</div>

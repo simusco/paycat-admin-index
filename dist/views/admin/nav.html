@@ -1,0 +1,17 @@
+<div class="container-12 p-navbar">
+    <div class="c12-span-4">
+        <div class="p-navbar-logo"><img src="/images/admin/logo.png"></div>
+    </div>
+    <div class="c12-span-4">
+        <div class="p-navbar-menu container-12">
+            <a ui-sref=".mantain" class="navbar-menu-item c12-span-6" ui-sref-active="navbar-menu-item--active">管理</a>
+            <a ui-sref=".statistics" class="navbar-menu-item c12-span-6" ui-sref-active="navbar-menu-item--active">统计</a>
+        </div>
+    </div>
+    <div class="c12-span-4-last" ng-controller="UserViewController">
+        <div class="p-navbar-user">
+            <img src="/images/admin/user-head-icon.png"><a href="">{{user.name}}</a>
+        </div>
+    </div>
+</div>
+<section ui-view></section>

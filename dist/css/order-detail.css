@@ -1,0 +1,68 @@
+html {
+  font-family: sans-serif;
+  -webkit-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+}
+
+body{
+	background-color:#1cabeb;
+}
+
+.hcenter{
+  overflow:auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.radius10{
+  border-radius:10px;
+}
+
+.main{
+  background-color:#fff;
+  width:96%;
+  margin-top:5px;
+  margin-bottom:10px;
+}
+
+.main__time{
+  margin-top:20px;
+}
+
+.time__hms{
+  color:#1cabeb;
+  font-size:32px;
+  font-weight:bolder;
+  text-align:center;
+}
+
+.time__desc{
+  color:#a3a3a3;
+  font-size:20px;
+  text-align:center;
+  background:url(/images/wx/bg-surplus-time.png) no-repeat;
+  background-size:100%;
+  height:60px;
+}
+
+.main__body{
+  margin-top:5px;
+}
+
+.logo{text-align:center;}
+.logo > img{width:110px;height:78px;}
+
+.order{margin-top:10px;width:74%;}
+.order__name{text-align:center;color:#1cabeb;}
+.order__detail{margin-top:15px;}
+.order__detail > span{display:block;color:#a3a3a3;line-height:22px;}
+
+.main__footer{margin-top:10px;}
+.footer__split{
+  background:url(/images/wx/bg-footer-split.png) no-repeat;
+  background-size:100%;
+  height:30px;
+}
+.footer__img{width:90%;}
+.footer__img > img{width:100%;height: 120px}
+.footer__contact{line-height:40px;text-align:center;text-decroration:none;font-size: 18px;color: #7a7a7a}

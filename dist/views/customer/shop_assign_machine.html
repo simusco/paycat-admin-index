@@ -1,0 +1,169 @@
+<div class="col-sm-12" ng-controller="AssignEquipViewController">
+<div class="panel panel-default">
+	<div class="panel-heading">查询设备</div>
+	<div class="panel-body">
+		<div class="row">
+			<div class="col-sm-12">
+				<form class="form-horizontal" role="form">
+				  <div class="form-group">
+                      <div class="col-sm-3">
+                          <select class="form-control"
+                                  ng-options="o.shopId as o.shopName for o in shopList"
+                                  ng-model="equipQuery.shopId">
+                              <option value="">选择查询店铺</option>
+                          </select>
+                      </div>
+                    <div class="col-sm-2">
+                      <input type="text" class="form-control" placeholder="设备编号" ng-model="equipQuery.equipId">
+                    </div>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control" placeholder="安放地址" ng-model="equipQuery.address">
+                    </div>
+                      <div class="col-sm-2">
+                          <select class="form-control"
+                                  ng-options="o.stateCode as o.stateDesc for o in stateOptions"
+                                  ng-model="equipQuery.stateCode">
+                              <option value="">选择设备状态</option>
+                          </select>
+                      </div>
+                    <div class="col-sm-2">
+                        <button type="button" class="btn btn-success" ng-click="queryEquips()">查询</button>
+                        <button type="button" class="btn btn-warning" ng-click="clearQuery()">清除</button>
+                    </div>
+				  </div>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
+    <div class="panel-heading">温馨提示：</div>
+    <div class="panel-body">
+        <div class="col-sm-8">{{errmsg}}</div>
+        <div class="col-sm-4"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+    </div>
+</div>
+<div class="panel panel-default">
+	<div class="panel-heading">设备列表</div>
+	<div class="panel-body">
+		<div class="row">
+		<div class="col-sm-12">
+			<table class="table table-striped">
+		      <thead>
+		        <tr>
+		          <th>设备编号</th>
+                  <th>设备状态</th>
+		          <th>所属店铺</th>
+                  <th>安放地址</th>
+                  <th>价格计划</th>
+		          <th>#</th>
+		        </tr>
+		      </thead>
+              <tbody ng-show="pageData == null || pageData.length == 0">
+                  <tr>
+                      <td colspan="6" class="text-center">未查询到设备</td>
+                  </tr>
+              </tbody>
+		      <tbody  ng-repeat="eq in pageData">
+		        <tr>
+		          <td width="10%">{{eq.equipId}}</td>
+                  <td width="10%">
+                        <img ng-src="{{getEquipStateIcon(eq)}}" alt="" style="width: 24px;height: 24px;">
+                        {{
+                        eq.stateCode == '100' ? '空闲' :
+                        eq.stateCode == '500' ? '设备异常' :
+                        eq.stateCode == '400' ? '未连接' :
+                        eq.stateCode == '200' ? (ue.surplusSec > 900 ? '使用中' : ue.surplusSec > 1 ? '时间不足' : '空闲') : ''
+                        }}
+                  </td>
+		          <td width="10%">{{eq.shopName}}</td>
+                  <td width="20%">{{eq.address}}</td>
+                  <td width="40%">{{eq.priceName}}</td>
+		          <td width="10%">
+                        <button type="button" class="btn btn-primary btn-sm" ng-click="assign(eq)">分配</button>
+		          </td>
+		        </tr>
+                <tr ng-show="eq.showAssignUI">
+                    <td colspan="6">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">店铺选择：</label>
+                                <div class="col-sm-4">
+                                    <select class="form-control" ng-options="o.shopId as o.shopName for o in shopList" ng-model="equip.shopId">
+                                        <option value="">选择店铺</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">安放地址：</label>
+                                <div class="col-sm-4">
+                                    <input type="text" class="form-control" placeholder="输入设备安装地址" ng-model="equip.address">
+                                </div>
+                            </div>
+                            <div class="form-group" ng-show="isShowShopperCanMod()">
+                                <label class="col-sm-2 control-label">店铺管理员能否修改价格计划：</label>
+                                <div class="col-sm-4">
+                                    <select
+                                            class="form-control"
+                                            ng-options="o.id as o.name for o in shopperCanModOptions"
+                                            ng-model="equip.shopperCanMod">
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-2 control-label">价格计划：</label>
+                                <div class="col-sm-4">
+                                    <select
+                                            class="form-control"
+                                            ng-options="o.id as o.name for o in shopPrices"
+                                            ng-model="equip.pricePlanId"
+                                            ng-change="showPrices()"
+                                            >
+                                        <option value="">选择价格计划</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group" ng-show="prices != null && prices.length > 0">
+                                <div class="col-sm-offset-2">
+                                    <table class="table table-condensed">
+                                        <thead>
+                                            <tr>
+                                                <th>主题</th>
+                                                <th>主题介绍</th>
+                                                <th>运行时间（分）</th>
+                                                <th>价格（元）</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr ng-repeat="p in prices">
+                                                <td>{{p.subject}}</td>
+                                                <td>{{p.description}}</td>
+                                                <td>{{p.time}}</td>
+                                                <td>{{p.price}}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-2"></div>
+                                <div class="col-sm-10">
+                                    <button type="button" class="btn btn-success" ng-click="saveAssignV2()">保存</button>
+                                    <button type="button" class="btn btn-warning" ng-click="cancel()">返回</button>
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+		      </tbody>
+		    </table>
+            <nav class="text-center" ng-show="totalPage.length > 1">
+                <ul class="pagination">
+                    <li ng-repeat="t in totalPage"><a href="" ng-click="go(t)">{{t+1}}</a></li>
+                </ul>
+            </nav>
+		</div>
+	</div>
+	</div>
+</div>
+</div>

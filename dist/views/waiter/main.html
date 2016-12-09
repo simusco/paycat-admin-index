@@ -1,0 +1,82 @@
+<style type="text/css">
+    body{background-color: #f0f0f0;}
+</style>
+<div class="container-7 main"  ng-controller="IndexViewController">
+    <div class="c7-span-5" style="position:relative;">
+        <div class="main-left" ng-controller="EquipViewController">
+            <div class="container-5" ng-repeat="ueRow in userEquipsTable">
+                <div ng-repeat="ue in ueRow" class="{{$index == 4 ? 'c5-span-1-last' : 'c5-span-1'}}" style="margin-top:5px;">
+                    <div class="equip">
+                        <div class="equip-addr"><span>{{ue.address}}</span></div>
+                        <div class="equip-icon">
+                            <div class="equip__time 
+                            {{
+                                    ue.surplusSec > 900 ?'equip__time--normal' : 
+                                    ue.surplusSec > 1 ? 'equip__time--warning' : 
+                                    'equip__time--hide'
+                                }}">
+                                <span>{{ue.surplusSecDesc}}</span>
+                            </div>
+                            <img ng-src="{{ue.icon}}">
+                        </div>
+                        <div class="equip-desc">
+                            {{
+                                ue.stateCode == '100' ? '空闲' : 
+                                ue.stateCode == '500' ? '设备异常' : 
+                                ue.stateCode == '400' ? '未连接' : 
+                                ue.stateCode == '200' ? (ue.surplusSec > 900 ? '使用中' : ue.surplusSec > 1 ? '时间不足' : '空闲') : ''
+                            }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="c7-span-2-last">
+        <div class="main-right" ng-controller="EquipViewController">
+            <div class="container-5">
+                <div class="analysis">
+                    <div class="container-12" ng-controller="UserViewController">
+                        <h4><b>{{user.shop.shopName}}</b></h4>
+                        <span style="color:#b7b7b7;"></span>
+                    </div>
+                    <div class="analysis-using container-12">
+                        <div class="c12-span-6">
+                            <img src="/images/admin/using-icon.png">
+                            <span>使用中：<span style="color:red;">{{analysis.usingCount == null ? 0 : analysis.usingCount}}</span></span>
+                        </div>
+                        <div class="c12-span-6-last">
+                            <img src="/images/admin/not-use-icon.png">
+                            <span>空闲：<span style="color:red;">{{analysis.ableCount == null ? 0 : analysis.ableCount}}</span></span>
+                        </div>
+                    </div>
+                    <div class="analysis-hr container-12"></div>
+                    <div class="analysis-content container-12">
+                        <span>在线机数：<span style="color:red;">{{analysis.onlineCount == null ? 0 : analysis.onlineCount}}台</span></span>
+                        <span>今日入账：<span style="color:red;">0元</span></span>
+                        <span>本月入账：<span style="color:red;">本月入账0元</span></span>
+                    </div>
+                </div>
+                <div class="analysis-msg-split"></div>
+                <div class="msg" ng-controller="MsgViewController">
+                    <div class="container-12">
+                        <h4><b>消息中心 <span style="color:6px;">（{{msgList.length}}）</span></b></h4>
+                    </div>
+                    <div class="msg-hr container-12"></div>
+                    <div class="msg-list">
+                        <div class="container-12 msg-list-row" ng-repeat="msg in msgList">
+                            <div class="c12-span-6">{{msg.msg}}</div>
+                            <div class="c12-span-3">{{msg.surplusSecondDesc}}之前</div>
+                            <div class="c12-span-3-last text-center"><img src="/images/admin/del-msg.png" ng-click="delMsg(msg.id)"></div>
+                        </div>
+                        <div class="container-12 msg-list-row" ng-show="msgList.length == 0">
+                            <div class="c12-span-6">无任何消息</div>
+                            <div class="c12-span-3"></div>
+                            <div class="c12-span-3-last"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
