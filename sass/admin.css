@@ -20,7 +20,7 @@ a, a:hover, a:active {
       color: #ffffff;
       height: 26px; }
   .nav__body {
-    height: 800px; }
+    height: 760px; }
   .nav__item {
     display: block;
     height: 72px;
@@ -53,6 +53,7 @@ a, a:hover, a:active {
         display: block; }
     .menu__item:hover {
       cursor: pointer;
+      color: #ffffff;
       background-color: #36567b; }
 
 .login-bar {
@@ -82,7 +83,6 @@ a, a:hover, a:active {
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px; }
-
 .panel__title {
   background-color: #5d9edc;
   height: 45px;
@@ -90,10 +90,8 @@ a, a:hover, a:active {
   font-size: 23px;
   padding-left: 20px;
   color: #ffffff; }
-
 .panel__body {
   background-color: #eaf5ff; }
-
 .panel--last {
   padding-bottom: 10px; }
 
@@ -164,11 +162,14 @@ a, a:hover, a:active {
   border-radius: 4px; }
   .pagination > li {
     display: inline; }
-    .pagination > li > a.active {
+    .pagination > li > a {
       display: inline-block;
       width: 30px;
       height: 30px;
-      line-height: 30px;
-      border-radius: 15px;
-      color: #ffffff;
-      background-color: #5d9edc; }
+      line-height: 30px; }
+      .pagination > li > a.active {
+        border-radius: 15px;
+        color: #ffffff;
+        background-color: #5d9edc; }
+
+/*# sourceMappingURL=admin.css.map */

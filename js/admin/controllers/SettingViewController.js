@@ -98,4 +98,4 @@ function($resource, $scope, $state, $interval, $cookies, socketService){
 
 }];
 
-module.exports = ctrl;
+export default ctrl;

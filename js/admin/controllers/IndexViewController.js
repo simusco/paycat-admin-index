@@ -19,4 +19,4 @@ function($scope, $state, $rootScope, $cookies, socketService){
 
 }];
 
-module.exports = ctrl;
+export default ctrl;

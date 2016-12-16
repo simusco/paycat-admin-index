@@ -56,11 +56,11 @@ function ($scope, $resource, $state, $interval, $cookies, $timeout, Pagination, 
         console.log('shopId:'+shopId);
         var roleId = $cookies.get('roleId');
         if(roleId == 1){
-            $state.go('customer.statistics.shop.equip',{shopId:shopId});
+            $state.go('customer.statistics_shop.equip',{shopId:shopId});
         }else if(roleId == 2){
-            $state.go('shopper.statistics.shop.equip',{shopId:shopId});
+            $state.go('shopper.statistics_shop.equip',{shopId:shopId});
         }
     }
 }];
 
-module.exports = ctrl;
+export default ctrl;

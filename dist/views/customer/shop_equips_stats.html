@@ -1,9 +1,9 @@
-<div class="panel panel-default" ng-controller="EquipStatisticsViewController">
-    <div class="panel-heading">设备收入情况</div>
-    <div class="panel-body">
-        <div class="col-sm-12" ng-show="errmsg != null && errmsg != ''">{{errmsg}}</div>
-        <div class="col-sm-12" ng-show="errmsg == null || errmsg == ''">
-            <table class="table table-striped">
+<div class="container-12 panel panel--default panel--last" ng-controller="EquipStatisticsViewController">
+    <div class="panel__title">设备收入情况</div>
+    <div class="panel__body">
+        <div class="c12-col-12" ng-show="errmsg != null && errmsg != ''">{{errmsg}}</div>
+        <div class="c12-col-12" ng-show="errmsg == null || errmsg == ''">
+            <table class="table">
                 <thead>
                 <tr>
                     <th>设备编号</th>
@@ -25,11 +25,11 @@
                 </tr>
                 </tbody>
             </table>
-            <nav class="text-center" ng-show="totalPage.length > 1">
+            <div class="container-12 text-center"  ng-show="totalPage.length > 1">
                 <ul class="pagination">
                     <li ng-repeat="t in totalPage"><a href="" ng-click="go(t)">{{t+1}}</a></li>
                 </ul>
-            </nav>
+            </div>
         </div>
     </div>
 </div>

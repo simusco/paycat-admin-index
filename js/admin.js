@@ -58861,6 +58861,34 @@
 	            $scope.errmsg = msg;
 	        }
 	    });
+
+	    $scope.appro = function (appro) {
+	        $resource(API.ROOT + '/appro', { token: token, shopId: appro.shopId }, { 'update': { method: 'PUT' } }).save(function (resp) {
+	            var code = resp.code;
+	            var msg = resp.msg;
+	            var data = resp.result;
+
+	            if (code == 100) {
+	                $scope.errmsg = '操作成功!';
+	                $timeout(function () {
+	                    $scope.errmsg = null;
+	                }, 3000);
+
+	                var index = -1;
+	                for (var x = 0; x < $scope.appros.length; x++) {
+	                    if ($scope.appros[x].shopId == appro.shopId) {
+	                        index = x;
+	                    }
+	                }
+
+	                if (index != -1) {
+	                    $scope.appros.splice(index, 1);
+	                }
+	            } else {
+	                $scope.errmsg = msg;
+	            }
+	        });
+	    };
 	}];
 
 /***/ }

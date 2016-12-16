@@ -1,10 +1,9 @@
-<div class="container-fluid"  ng-controller="EquipStatisticsViewController">
-    <div class="panel panel-default">
-        <div class="panel-heading">设备收入情况</div>
-        <div class="panel-body">
-            <div class="col-sm-12" ng-show="errmsg != null && errmsg != ''">{{errmsg}}</div>
-            <div class="col-sm-12" ng-show="errmsg == null || errmsg == ''">
-                <table class="table table-striped">
+<div class="container-12"  ng-controller="EquipStatisticsViewController">
+    <div class="container-12 panel panel--default panel--last">
+        <div class="panel__body">
+            <div class="c12-col-12" ng-show="errmsg != null && errmsg != ''">{{errmsg}}</div>
+            <div class="c12-col-12" ng-show="errmsg == null || errmsg == ''">
+                <table class="table">
                     <thead>
                     <tr>
                         <th>设备编号</th>
@@ -17,7 +16,7 @@
                     </thead>
                     <tbody>
                     <tr ng-repeat="a in pageData">
-                        <td>{{a.equipId}}</td>
+                        <td class="text-center">{{a.equipId}}</td>
                         <td>{{getShopName(a.shopId)}}</td>
                         <td>{{a.address}}</td>
                         <td>{{a.dprice == null ? 0 : a.dprice}}元</td>
@@ -26,11 +25,11 @@
                     </tr>
                     </tbody>
                 </table>
-                <nav class="text-center" ng-show="totalPage.length > 1">
+                <div class="container-12 text-center"  ng-show="totalPage.length > 1">
                     <ul class="pagination">
                         <li ng-repeat="t in totalPage"><a href="" ng-click="go(t)">{{t+1}}</a></li>
                     </ul>
-                </nav>
+                </div>
             </div>
         </div>
     </div>

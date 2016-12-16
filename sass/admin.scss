@@ -1,4 +1,4 @@
-*{box-sizing: border-box;}
+*{box-sizing: border-box}
 .main{
   min-width: 1280px;
 }
@@ -26,7 +26,7 @@ a,a:hover,a:active{
   }
 
   &__body{
-    height: 800px;
+    height: 760px;
   }
 
   &__item{
@@ -68,6 +68,7 @@ a,a:hover,a:active{
 
     &:hover{
       cursor: pointer;
+      color:#ffffff;
       background-color: #36567b;
     }
   }
@@ -121,7 +122,6 @@ a,a:hover,a:active{
     font-size: 23px;
     padding-left: 20px;
     color: #ffffff;
-
   }
 
   &__body{
@@ -230,14 +230,17 @@ a,a:hover,a:active{
   >li{
     display: inline;
 
-    >a.active{
+    >a{
       display: inline-block;
       width: 30px;
       height: 30px;
       line-height:30px;
-      border-radius: 15px;
-      color: #ffffff;
-      background-color: #5d9edc;
+
+      &.active{
+        border-radius: 15px;
+        color: #ffffff;
+        background-color: #5d9edc;
+      }
     }
   }
 }

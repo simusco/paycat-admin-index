@@ -1,19 +1,48 @@
-<div class="container-12 p-navbar">
-    <div class="c12-span-4">
-        <div class="p-navbar-logo"><img src="/images/admin/logo.png"></div>
-    </div>
-    <div class="c12-span-4">
-        <div class="p-navbar-menu container-12">
-            <a ui-sref=".mantain" class="navbar-menu-item c12-span-3" ui-sref-active="navbar-menu-item--active">管理</a>
-            <a ui-sref=".setting" class="navbar-menu-item c12-span-3" ui-sref-active="navbar-menu-item--active">设置</a>
-            <a ui-sref=".statistics" class="navbar-menu-item c12-span-3" ui-sref-active="navbar-menu-item--active">统计</a>
-            <a ui-sref=".help" class="navbar-menu-item c12-span-3-last"  ui-sref-active="navbar-menu-item--active">帮助中心</a>
+<div class="container-12 main">
+    <div class="c12-col-2 nav">
+        <div class="nav__top" ng-controller="UserViewController">
+            <img src="images/admin/head-icon.png" alt="">
+            <span>{{user.name}}</span>
+            <span>状态：已登录</span>
+        </div>
+        <div class="nav__body">
+            <div class="nav-item">
+                <span class="nav__item">管理</span>
+                <div class="menu">
+                    <a ui-sref=".mantain_shop" class="menu__item" ui-sref-active="menu__item--active">维护店铺<img src="images/admin/a-icon.png"/></a>
+                    <a ui-sref=".mantain_price" class="menu__item" ui-sref-active="menu__item--active">设定价格<img src="images/admin/a-icon.png"/></a>
+                    <a ui-sref=".mantain_waiter" class="menu__item" ui-sref-active="menu__item--active">服务人员<img src="images/admin/a-icon.png"/></a>
+                    <a ui-sref=".mantain_assign_machine_shop" class="menu__item" ui-sref-active="menu__item--active">分配机器<img src="images/admin/a-icon.png"/></a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <span class="nav__item">设置</span>
+                <div class="menu">
+                    <a ui-sref=".setting_cust_info" class="menu__item" ui-sref-active="menu__item--active">资料设置<img src="images/admin/a-icon.png"/></a>
+                    <a ui-sref=".setting_cust_financial" class="menu__item" ui-sref-active="menu__item--active">财务设置<img src="images/admin/a-icon.png"/></a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <span class="nav__item">统计</span>
+                <div class="menu">
+                    <a ui-sref=".statistics_shop" class="menu__item" ui-sref-active="menu__item--active">店铺收入<img src="images/admin/a-icon.png"/></a>
+                    <a ui-sref=".statistics_equip" class="menu__item" ui-sref-active="menu__item--active">设备收入<img src="images/admin/a-icon.png"/></a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="c12-span-4-last" ng-controller="UserViewController">
-        <div class="p-navbar-user">
-            <img src="/images/admin/user-head-icon.png"><a href="">{{user.name}}</a>
+    <div class="c12-col-10-last body">
+        <div class="container-12 login-bar">
+            <div class="c12-col-6 login-bar__left">
+                <img src="images/admin/long-logo.png" alt="">
+            </div>
+            <div class="c12-col-6-last login-bar__right">
+                <a href="">退出登录</a>
+            </div>
+        </div>
+
+        <div class="container-12 content" ui-view>
+
         </div>
     </div>
 </div>
-<section ui-view></section>

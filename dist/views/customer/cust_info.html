@@ -1,47 +1,75 @@
-<div class="panel" ng-controller="CustViewController">
-    <div class="panel-body">
-        <div class="col-sm-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">修改商户信息：</div>
-                <div class="panel-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label class="control-label">商户名称：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.name">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">商户地址：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.address">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">商户联系电话：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.telephone">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">座机：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.phone">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">商户密码：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.pwd1">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">再次输入商户密码：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.pwd2">
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-primary" ng-click="modifyUserInfo()">修改</button>
-                        </div>
-                    </form>
+<div class="container-12" ng-controller="CustViewController">
+    <div class="container-12 panel panel--default" ng-show="errmsg != null && errmsg != ''">
+        <div class="panel__title">温馨提示：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">温馨提示：</span>
+                </div>
+                <div class="c12-col-8">
+                    {{errmsg}}
+                </div>
+                <div class="c12-col-2">
+                    <input type="button" class="button button__success" ng-click="closeMsg()" value="知道了"/>
                 </div>
             </div>
         </div>
-        <div class="col-sm-8">
-            <div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
-                <div class="panel-heading">温馨提示：</div>
-                <div class="panel-body">
-                    <div class="col-sm-8">{{errmsg}}</div>
-                    <div class="col-sm-2"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+    </div>
+
+    <div class="container-12 panel panel--default panel--last">
+        <div class="panel__title">修改商户基本信息：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">商户名称：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.name">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">商户地址：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.address">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">商户联系电话：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.telephone">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">座机：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.phone">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">商户密码：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.pwd1">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">再次输入商户密码：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.pwd2">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-12 text-center">
+                    <input type="button" class="button button__success" ng-click="modifyUserInfo()" value="修改"/>
                 </div>
             </div>
         </div>

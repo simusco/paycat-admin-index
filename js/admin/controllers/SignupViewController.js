@@ -57,4 +57,4 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location','$rootScope'
 	$scope.isEmpty = isEmpty;
 }];
 
-module.exports = ctrl;
+export default ctrl;

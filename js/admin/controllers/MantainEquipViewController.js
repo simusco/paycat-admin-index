@@ -21,6 +21,11 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location', '$cookies',
         {id:'3',name:'抽佣'}
     ];
 
+    $scope.allowChargeOptions = [
+        {id:'Y',name:'是'},
+        {id:'N',name:'否'}
+    ];
+
     var  loadCusts = function() {
         $resource(API.ROOT+'/user/'+token+'/custs/all', {}, {'update': { method:'PUT' }})
             .get(function(resp){
@@ -77,6 +82,9 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location', '$cookies',
                     e.deposit = $scope.editO.deposit;
                     e.model = $scope.editO.model;
                     e.rent = $scope.editO.rent;
+                    e.unit = $scope.editO.unit;
+                    e.isAllowCharge = $scope.editO.isAllowCharge;
+                    e.drawRate = $scope.editO.drawRate;
                     e.edit = false;
 
                     $scope.editO = null;
@@ -91,7 +99,7 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location', '$cookies',
             }
 
             e.edit = !e.edit;
-            $scope.editO = {equipId:e.equipId,custId:e.custId,deposit:e.deposit,model:e.model,rent:e.rent};
+            $scope.editO = {equipId:e.equipId,custId:e.custId,deposit:e.deposit,model:e.model,rent:e.rent,drawRate:e.drawRate,isAllowCharge:e.isAllowCharge,unit:e.unit};
         }
     }
 
@@ -114,7 +122,7 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location', '$cookies',
         }
         return name;
     }
-    
+
     $scope.getModelText = function (model) {
         var name = '';
         for(var i=0;i<$scope.equipModelOptions.length;i++){
@@ -126,9 +134,28 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location', '$cookies',
         }
         return name;
     }
-    
+
+    $scope.getAllowChargeText = function (isAllowCharge) {
+        var name = '';
+        for(var i=0;i<$scope.allowChargeOptions.length;i++){
+            var flag = $scope.allowChargeOptions[i].id == isAllowCharge;
+            if(flag){
+                name = $scope.allowChargeOptions[i].name;
+                break;
+            }
+        }
+        return name;
+    }
+
     $scope.isShowRent = function (equip, edit) {
         if(edit && equip.model == '2'){
+            return true;
+        }
+        return false;
+    }
+
+    $scope.isShowDrawRate = function (equip, edit) {
+        if(edit && equip.model == '3'){
             return true;
         }
         return false;
@@ -139,4 +166,4 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location', '$cookies',
     }
 }];
 
-module.exports = ctrl;
+export default ctrl;

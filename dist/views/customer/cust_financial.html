@@ -1,39 +1,59 @@
-<div class="panel" ng-controller="CustViewController">
-    <div class="panel-body">
-        <div class="col-sm-4">
-            <div class="panel panel-default">
-                <div class="panel-heading">修改财务信息</div>
-                <div class="panel-body">
-                    <form role="form">
-                        <div class="form-group">
-                            <label class="control-label">收款人：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.payee">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">银行：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.bank">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">卡号：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.cardNo">
-                        </div>
-                        <div class="form-group">
-                            <label class="control-label">开户行：</label>
-                            <input type="text" class="form-control" placeholder="" ng-model="cust.bankOfDeposit">
-                        </div>
-                        <div class="form-group">
-                            <button type="button" class="btn btn-primary" ng-click="modifyFinancial()">修改</button>
-                        </div>
-                    </form>
+<div class="container-12" ng-controller="CustViewController">
+    <div class="container-12 panel panel--default" ng-show="errmsg != null && errmsg != ''">
+        <div class="panel__title">温馨提示：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">温馨提示：</span>
+                </div>
+                <div class="c12-col-8">
+                    {{errmsg}}
+                </div>
+                <div class="c12-col-2">
+                    <input type="button" class="button button__success" ng-click="closeMsg()" value="知道了"/>
                 </div>
             </div>
         </div>
-        <div class="col-sm-8">
-            <div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
-                <div class="panel-heading">温馨提示：</div>
-                <div class="panel-body">
-                    <div class="col-sm-8">{{errmsg}}</div>
-                    <div class="col-sm-2"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+    </div>
+
+    <div class="container-12 panel panel--default panel--last">
+        <div class="panel__title">修改商户财务信息：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">收款人：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.payee">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">银行：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.bank">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">卡号：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.cardNo">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-4">
+                    <span class="form__label">开户行：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input type="text" class="form__control" placeholder="" ng-model="cust.bankOfDeposit">
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-12 text-center">
+                    <input type="button" class="button button__default" ng-click="modifyFinancial()" value="修改"/>
                 </div>
             </div>
         </div>

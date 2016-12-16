@@ -1,24 +1,34 @@
-<div class="container-fluid"  ng-controller="MantainEquipViewController">
-    <div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
-        <div class="panel-heading">温馨提示：</div>
-        <div class="panel-body">
-            <div class="col-sm-8">{{errmsg}}</div>
-            <div class="col-sm-2"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+<div class="container-12"  ng-controller="MantainEquipViewController">
+    <div class="container-12 panel panel--default" ng-show="errmsg != null && errmsg != ''">
+        <div class="panel__title">温馨提示：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">温馨提示：</span>
+                </div>
+                <div class="c12-col-8">
+                    {{errmsg}}
+                </div>
+                <div class="c12-col-2">
+                    <input type="button" class="button button__success" ng-click="closeMsg()" value="知道了"/>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">分配设备</div>
-        <div class="panel-body">
-            <table class="table table-striped">
+    <div class="container-12 panel panel--default">
+        <div class="panel__body">
+            <table class="table">
                 <thead>
                 <tr>
-                    <th width="15%">设备编码</th>
-                    <th width="15%">推送号</th>
-                    <th width="15%">注册时间</th>
+                    <th width="13%">设备编码</th>
+                    <th width="12%">推送号</th>
+                    <th width="10%">注册时间</th>
                     <th width="15%">目前所属商户</th>
                     <th width="10%">押金金额</th>
-                    <th width="15%">模式</th>
-                    <th width="15%">#</th>
+                    <th width="10%">单位</th>
+                    <th width="10%">允许充值</th>
+                    <th width="10%">模式</th>
+                    <th width="15%">操作</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -28,7 +38,7 @@
                     <td>{{e.equipRegTime}}</td>
                     <td>
                         <span ng-hide="e.edit">{{getCustName(e.custId)}}</span>
-                        <select class="form-control"
+                        <select class="form__control"
                                 ng-options="o.custId as o.name for o in custs"
                                 ng-model="editO.custId"
                                 ng-show="e.edit">
@@ -37,22 +47,36 @@
                     </td>
                     <td>
                         <span ng-hide="e.edit">{{e.deposit}}</span>
-                        <input type="text" class="form-control" placeholder="押金金额" ng-model="editO.deposit" ng-show="e.edit">
+                        <input type="text" class="form__control" placeholder="押金金额" ng-model="editO.deposit" ng-show="e.edit">
+                    </td>
+                    <td>
+                        <span ng-hide="e.edit">{{e.unit}}</span>
+                        <input type="text" class="form__control" placeholder="请输入单位" ng-model="editO.unit" ng-show="e.edit">
+                    </td>
+                    <td>
+                        <span ng-hide="e.edit">{{getAllowChargeText(e.isAllowCharge)}}</span>
+                        <select class="form__control"
+                                ng-options="o.id as o.name for o in allowChargeOptions"
+                                ng-model="editO.isAllowCharge"
+                                ng-show="e.edit"
+                        >
+                            <option value="">--选择--</option>
+                        </select>
                     </td>
                     <td>
                         <span ng-hide="e.edit">{{getModelText(e.model)}}</span>
-                        <select class="form-control"
+                        <select class="form__control"
                                 ng-options="o.id as o.name for o in equipModelOptions"
                                 ng-model="editO.model"
-                                ng-show="e.edit"
-                                >
-                            <option value="">选择模式</option>
+                                ng-show="e.edit">
+                            <option value="">-选择模式-</option>
                         </select>
-                        <input ng-show="isShowRent(editO, e.edit)" type="text" class="form-control" placeholder="输入一个月租金金额" ng-model="editO.rent">
+                        <input ng-show="isShowRent(editO, e.edit)" type="text" class="form__control" placeholder="输入一个月租金金额" ng-model="editO.rent">
+                        <input ng-show="isShowDrawRate(editO, e.edit)" type="text" class="form__control" placeholder="请输入抽佣比率" ng-model="editO.drawRate">
                     </td>
                     <td>
-                        <button type="button" class="btn btn-primary" ng-click="modifyEquip(e)">{{e.edit ? '保存': '编辑'}}</button>
-                        <button type="button" class="btn btn-warning" ng-click="cancel(e)" ng-show="e.edit">返回</button>
+                        <button type="button" class="button button__success" ng-click="modifyEquip(e)">{{e.edit ? '保存': '编辑'}}</button>
+                        <button type="button" class="button button__default" ng-click="cancel(e)" ng-show="e.edit">返回</button>
                     </td>
                 </tr>
                 </tbody>

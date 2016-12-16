@@ -1,95 +1,114 @@
-<div class="container-fluid" ng-controller="WaiterViewController">
-    <div class="panel panel-default">
-        <div class="panel-heading">新增加服务员</div>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th style="width: 10%">服务员帐号</th>
-                <th style="width: 10%">服务员姓名</th>
-                <th style="width: 10%">服务员密码</th>
-                <th style="width: 20%">角色</th>
-                <th style="width: 20%">所属店铺</th>
-                <th style="width: 30%">#</th>
-            </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td><input class="form-control" ng-model="newWaiter.id"/></td>
-                    <td>
-                        <input class="form-control" ng-model="newWaiter.name"/>
-                    </td>
-                    <td>
-                        <input class="form-control" ng-model="newWaiter.password"/>
-                    </td>
-                    <td>
-                        <select class="form-control" ng-options="o.roleId as o.roleName for o in roles" ng-model="newWaiter.roleId">
-                            <option value="">请选择角色</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select class="form-control"
-                                ng-options="o.shopId as o.shopName for o in shopList"
-                                ng-model="newWaiter.shopId">
-                            <option value="">请选择所属店铺</option>
-                        </select>
-                    </td>
-                    <td>
-                        <button type="button" class="btn btn-primary" ng-click="saveWaiter()">添加服务员</button>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-    <div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
-        <div class="panel-heading">温馨提示：</div>
-        <div class="panel-body">
-            <div class="col-sm-8">{{errmsg}}</div>
-            <div class="col-sm-2"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+<div class="container-12" ng-controller="WaiterViewController">
+    <div class="container-12 panel panel--default">
+        <div class="panel__title">新增加服务员</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">服务员帐号：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input class="form__control" ng-model="newWaiter.id"/>
+                </div>
+                <div class="c12-col-2">
+                    <span class="form__label">服务员姓名：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input class="form__control" ng-model="newWaiter.name"/>
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">服务员密码：</span>
+                </div>
+                <div class="c12-col-4">
+                    <input class="form__control" ng-model="newWaiter.password"/>
+                </div>
+                <div class="c12-col-2">
+                    <span class="form__label">角色：</span>
+                </div>
+                <div class="c12-col-4">
+                    <select class="form__control" ng-options="o.roleId as o.roleName for o in roles" ng-model="newWaiter.roleId">
+                        <option value="">请选择角色</option>
+                    </select>
+                </div>
+            </div>
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">所属店铺：</span>
+                </div>
+                <div class="c12-col-4">
+                    <select class="form__control"
+                            ng-options="o.shopId as o.shopName for o in shopList"
+                            ng-model="newWaiter.shopId">
+                        <option value="">请选择所属店铺</option>
+                    </select>
+                </div>
+                <div class="c12-col-6">
+                    <input type="button" class="button button__success" ng-click="saveWaiter()" value="添加服务员"/>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">修改服务员</div>
-        <table class="table table-striped">
-            <thead>
-            <tr>
-                <th style="width: 10%">服务员帐号</th>
-                <th style="width: 10%">服务员姓名</th>
-                <th style="width: 10%">服务员密码</th>
-                <th style="width: 20%">角色</th>
-                <th style="width: 20%">所属店铺</th>
-                <th style="width: 30%">#</th>
-            </tr>
-            </thead>
-            <tbody>
-            <tr ng-repeat="waiter in waiters">
-                <td>{{waiter.id}}</td>
-                <td>
-                    <span ng-hide="waiter.edit">{{waiter.name}}</span>
-                    <input class="form-control" ng-show="waiter.edit" ng-model="editO.name"/>
-                </td>
-                <td>
-                    <span ng-hide="waiter.edit">{{waiter.password}}</span>
-                    <input class="form-control" ng-show="waiter.edit" ng-model="editO.password"/>
-                </td>
-                <td>
-                    <span ng-hide="waiter.edit">{{getRoleName(waiter.roleId)}}</span>
-                    <select ng-show="waiter.edit" class="form-control" ng-options="o.roleId as o.roleName for o in roles" ng-model="editO.roleId"></select>
-                </td>
-                <td>
-                    <span ng-hide="waiter.edit">{{getShopName(waiter.shopId)}}</span>
-                    <select ng-show="waiter.edit"
-                            class="form-control"
-                            ng-options="o.shopId as o.shopName for o in shopList"
-                            ng-model="editO.shopId">
-                    </select>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-primary" ng-click="editWaiter(waiter)">{{waiter.edit ? '保存': '编辑'}}</button>
-                    <button type="button" class="btn btn-warning" ng-click="logoff(waiter)" ng-hide="waiter.edit">注销</button>
-                    <button type="button" class="btn btn-warning" ng-click="cancel(waiter)" ng-show="waiter.edit">返回</button>
-                </td>
-            </tr>
-            </tbody>
-        </table>
+    <div class="container-12 panel panel--default" ng-show="errmsg != null && errmsg != ''">
+        <div class="panel__title">温馨提示：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">温馨提示：</span>
+                </div>
+                <div class="c12-col-8">
+                    {{errmsg}}
+                </div>
+                <div class="c12-col-2">
+                    <input type="button" class="button button__success" ng-click="closeMsg()" value="知道了"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-12 panel panel--default  panel--last">
+        <div class="panel__body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th style="width: 10%">服务员帐号</th>
+                    <th style="width: 10%">服务员姓名</th>
+                    <th style="width: 10%">服务员密码</th>
+                    <th style="width: 25%">角色</th>
+                    <th style="width: 30%">所属店铺</th>
+                    <th style="width: 15%">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="waiter in waiters">
+                        <td class="text-center">{{waiter.id}}</td>
+                        <td>
+                            <span ng-hide="waiter.edit">{{waiter.name}}</span>
+                            <input class="form__control" ng-show="waiter.edit" ng-model="editO.name"/>
+                        </td>
+                        <td>
+                            <span ng-hide="waiter.edit">{{waiter.password}}</span>
+                            <input class="form__control" ng-show="waiter.edit" ng-model="editO.password"/>
+                        </td>
+                        <td>
+                            <span ng-hide="waiter.edit">{{getRoleName(waiter.roleId)}}</span>
+                            <select ng-show="waiter.edit" class="form__control" ng-options="o.roleId as o.roleName for o in roles" ng-model="editO.roleId"></select>
+                        </td>
+                        <td>
+                            <span ng-hide="waiter.edit">{{getShopName(waiter.shopId)}}</span>
+                            <select ng-show="waiter.edit"
+                                    class="form__control"
+                                    ng-options="o.shopId as o.shopName for o in shopList"
+                                    ng-model="editO.shopId">
+                            </select>
+                        </td>
+                        <td>
+                            <input type="button" class="button button__success" ng-click="editWaiter(waiter)" value="{{waiter.edit ? '保存': '编辑'}}"/>
+                            <input type="button" class="button button__success" ng-click="logoff(waiter)" ng-hide="waiter.edit" value="注销"/>
+                            <input type="button" class="button button__default" ng-click="cancel(waiter)" ng-show="waiter.edit" value="返回"/>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </div>
 </div>

@@ -1,15 +1,23 @@
-<div class="container-fluid"  ng-controller="MantainCustViewController">
-    <div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
-        <div class="panel-heading">温馨提示：</div>
-        <div class="panel-body">
-            <div class="col-sm-8">{{errmsg}}</div>
-            <div class="col-sm-2"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+<div class="container-12"  ng-controller="MantainCustViewController">
+    <div class="container-12 panel panel--default" ng-show="errmsg != null && errmsg != ''">
+        <div class="panel__title">温馨提示：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">温馨提示：</span>
+                </div>
+                <div class="c12-col-8">
+                    {{errmsg}}
+                </div>
+                <div class="c12-col-2">
+                    <input type="button" class="button button__success" ng-click="closeMsg()" value="知道了"/>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <div class="panel-heading">维护客户信息</div>
-        <div class="panel-body">
-            <table class="table table-striped" ng-hide="edit">
+    <div class="container-12 panel panel--default">
+        <div class="panel__body">
+            <table class="table" ng-hide="edit">
                 <thead>
                 <tr>
                     <th width="15%">商户名称</th>
@@ -18,7 +26,9 @@
                     <th width="10%">座机</th>
                     <th width="10%">注册客户时间</th>
                     <th width="10%">帐号</th>
-                    <th width="20%"><button type="button" class="btn btn-warning" ng-click="addCust()">注册商户</button></th>
+                    <th width="20%">
+                        <input type="button" class="button button__success" ng-click="addCust()" value="注册商户"/>
+                    </th>
                 </tr>
                 </thead>
                 <tbody>
@@ -30,61 +40,110 @@
                     <td>{{c.regTime}}</td>
                     <td>{{c.userId}}</td>
                     <td>
-                        <button type="button" class="btn btn-primary" ng-click="editCust(c)">编辑商户</button>
+                        <input type="button" class="button button__success" ng-click="editCust(c)" value="编辑商户"/>
                     </td>
                 </tr>
                 </tbody>
             </table>
-            <form role="form" ng-show="edit">
-                <div class="form-group">
-                    <label class="control-label">商户名称：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.name">
+            <div class="container-12 panel panel--default" ng-show="edit">
+                <div class="panel__title">编辑商户信息</div>
+                <div class="panel__body">
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">商户名称：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.name">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">商户地址：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.address">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">商户联系电话：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.telephone">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">座机：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.phone">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">商户帐号：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.userId">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">商户密码：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.pwd1">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">再次输入商户密码：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.pwd2">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">收款人：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.payee">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">银行：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.bank">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">卡号：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.cardNo">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-4">
+                            <label class="form__label">开户行：</label>
+                        </div>
+                        <div class="c12-col-4">
+                            <input type="text" class="form__control" placeholder="" ng-model="editO.bankOfDeposit">
+                        </div>
+                    </div>
+                    <div class="container-12 form">
+                        <div class="c12-col-12 text-center">
+                            <input type="button" class="button button__success" ng-click="mantainCust()" value="保存"/>
+                            <input type="button" class="button button__default" ng-click="cancel()" value="返回"/>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <label class="control-label">商户地址：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.address">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">商户联系电话：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.telephone">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">座机：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.phone">
-                </div>
-                <div class="form-group" ng-show="editO.custId == null">
-                    <label class="control-label">商户帐号：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.userId">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">商户密码：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.pwd1">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">再次输入商户密码：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.pwd2">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">收款人：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.payee">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">银行：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.bank">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">卡号：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.cardNo">
-                </div>
-                <div class="form-group">
-                    <label class="control-label">开户行：</label>
-                    <input type="text" class="form-control" placeholder="" ng-model="editO.bankOfDeposit">
-                </div>
-                <div class="form-group">
-                    <button type="button" class="btn btn-primary" ng-click="mantainCust()">保存</button>
-                    <button type="button" class="btn btn-warning" ng-click="cancel()">返回</button>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
 </div>

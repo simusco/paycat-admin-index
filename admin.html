@@ -1,147 +1,30 @@
 <!DOCTYPE html>
-<html lang="en">
+<html ng-app="PaycatAdmin" id="ng-app">
 <head>
+    <title>收银猫管理系统</title>
+
     <meta charset="UTF-8">
-    <title>收银猫官方网站</title>
-    <link rel="stylesheet" href="./css/base.css">
-    <link rel="stylesheet" href="./css/admin.css">
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- HTTP 1.0 -->
+    <meta http-equiv="cache-control" content="no-cache">
+    <!-- Prevent caching at the proxy server -->
+
+    <meta http-equiv="expires" content="0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,Chrome=1" />
+
+    <link rel="stylesheet" href="./css/base.css" type="text/css">
+    <link rel="stylesheet" href="./css/admin.css" type="text/css">
+
+    <!--[if lte IE 9]>
+    <script src="./js/lib/respond.min.js"></script>
+    <script src="./js/lib/html5.js"></script>
+    <![endif]-->
 </head>
 <body>
-
-<div class="container-12 main">
-    <div class="c12-col-2 nav">
-        <div class="nav__top">
-            <img src="images/admin/head-icon.png" alt="">
-            <span>商户1</span>
-            <span>状态：登录中..</span>
-        </div>
-        <div class="nav__body">
-            <div class="nav-item">
-                <span class="nav__item">管理</span>
-                <div class="menu">
-                    <span class="menu__item menu__item--active">店铺维护<img src="images/admin/a-icon.png"/></span>
-                    <span class="menu__item">分配机器<img src="images/admin/a-icon.png"/></span>
-                    <span class="menu__item">设定价格<img src="images/admin/a-icon.png"/></span>
-                </div>
-            </div>
-            <div class="nav-item">
-                <span class="nav__item">管理</span>
-                <div class="menu">
-                    <span class="menu__item">店铺维护<img src="images/admin/a-icon.png"/></span>
-                    <span class="menu__item">分配机器<img src="images/admin/a-icon.png"/></span>
-                    <span class="menu__item">设定价格<img src="images/admin/a-icon.png"/></span>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="c12-col-10-last body">
-        <div class="container-12 login-bar">
-            <div class="c12-col-6 login-bar__left">
-                <img src="images/admin/long-logo.png" alt="">
-            </div>
-            <div class="c12-col-6-last login-bar__right">
-                <a href="">退出登录</a>
-            </div>
-        </div>
-
-        <div class="container-12 content">
-            <div class="container-12 panel panel--default">
-                <div class="panel__title">店铺维护</div>
-                <div class="panel__body">
-                    <div class="container-12 form">
-                        <div class="c12-col-2">
-                            <span class="form__label">店铺名称：</span>
-                        </div>
-                        <div class="c12-col-2">
-                            <input type="text" class="form__control"/>
-                        </div>
-                        <div class="c12-col-2">
-                            <span class="form__label">店铺地址：</span>
-                        </div>
-                        <div class="c12-col-2">
-                            <input type="text" class="form__control"/>
-                        </div>
-                        <div class="c12-col-2">
-                            <span class="form__label">店铺地址：</span>
-                        </div>
-                        <div class="c12-col-2">
-                            <input type="text" class="form__control"/>
-                        </div>
-                    </div>
-                    <div class="container-12 form">
-                        <div class="c12-col-12 text-center">
-                            <input type="button" class="button button__default" value="清除"/>
-                            <input type="button" class="button button__success" value="确定"/>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="container-12 panel panel--default panel--last">
-                <div class="panel__body">
-                    <table class="table">
-                        <thead>
-                        <tr>
-                            <th width="15%">商户名称</th>
-                            <th width="25%">商户地址</th>
-                            <th width="10%">商户联系电话</th>
-                            <th width="10%">座机</th>
-                            <th width="10%">注册客户时间</th>
-                            <th width="10%">帐号</th>
-                            <th width="20%">操作</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xx</td>
-                            <td>{{c.phone}}</td>
-                            <td>{{c.regTime}}</td>
-                            <td>{{c.userId}}</td>
-                            <td>
-                                <input type="button" class="button button__default" value="清除"/>
-                                <input type="button" class="button button__success" value="确定"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xx</td>
-                            <td>{{c.phone}}</td>
-                            <td>{{c.regTime}}</td>
-                            <td>{{c.userId}}</td>
-                            <td>
-                                <input type="button" class="button button__default" value="清除"/>
-                                <input type="button" class="button button__success" value="确定"/>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td>xxx</td>
-                            <td>xxx</td>
-                            <td>xx</td>
-                            <td>{{c.phone}}</td>
-                            <td>{{c.regTime}}</td>
-                            <td>{{c.userId}}</td>
-                            <td>
-                                <input type="button" class="button button__default" value="清除"/>
-                                <input type="button" class="button button__success" value="确定"/>
-                            </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                    <div class="container-12 text-center">
-                        <ul class="pagination">
-                            <li><a href="" ng-click="go(t)">上一页</a></li>
-                            <li><a href="" ng-click="go(t)" class="active">1</a></li>
-                            <li><a href="" ng-click="go(t)">2</a></li>
-                            <li><a href="" ng-click="go(t)">下一页</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+    <section ui-view></section>
+    <!-- build:js ./js/admin.min.js -->
+    <script src="./js/admin.js" type="text/javascript"></script>
+    <!-- endbuild -->
 </body>
 </html>

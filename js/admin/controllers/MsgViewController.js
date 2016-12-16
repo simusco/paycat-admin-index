@@ -102,4 +102,4 @@ var ctrl = [
 	})
 }];
 
-module.exports = ctrl;
+export default ctrl;

@@ -33,7 +33,7 @@ a, a:hover, a:active {
 }
 /* line 28, ../sass/admin.scss */
 .nav__body {
-  height: 800px;
+  height: 760px;
 }
 /* line 32, ../sass/admin.scss */
 .nav__item {
@@ -80,26 +80,27 @@ a, a:hover, a:active {
 /* line 69, ../sass/admin.scss */
 .menu__item:hover {
   cursor: pointer;
+  color: #ffffff;
   background-color: #36567b;
 }
 
-/* line 76, ../sass/admin.scss */
+/* line 77, ../sass/admin.scss */
 .login-bar {
   height: 80px;
   background-color: #ffffff;
 }
-/* line 80, ../sass/admin.scss */
+/* line 81, ../sass/admin.scss */
 .login-bar__left {
   height: 80px;
   line-height: 60px;
   padding-left: 20px;
 }
-/* line 85, ../sass/admin.scss */
+/* line 86, ../sass/admin.scss */
 .login-bar__left > img {
   text-align: left;
   vertical-align: bottom;
 }
-/* line 91, ../sass/admin.scss */
+/* line 92, ../sass/admin.scss */
 .login-bar__right {
   height: 80px;
   position: relative;
@@ -107,24 +108,24 @@ a, a:hover, a:active {
   text-align: right;
   padding-right: 20px;
 }
-/* line 98, ../sass/admin.scss */
+/* line 99, ../sass/admin.scss */
 .login-bar__right > a {
   display: inline-block;
 }
 
-/* line 105, ../sass/admin.scss */
+/* line 106, ../sass/admin.scss */
 .content {
   background-color: #b2daff;
 }
 
-/* line 110, ../sass/admin.scss */
+/* line 111, ../sass/admin.scss */
 .panel--default {
   box-sizing: border-box;
   padding-left: 10px;
   padding-top: 10px;
   padding-right: 10px;
 }
-/* line 117, ../sass/admin.scss */
+/* line 118, ../sass/admin.scss */
 .panel__title {
   background-color: #5d9edc;
   height: 45px;
@@ -240,11 +241,14 @@ a, a:hover, a:active {
   display: inline;
 }
 /* line 233, ../sass/admin.scss */
-.pagination > li > a.active {
+.pagination > li > a {
   display: inline-block;
   width: 30px;
   height: 30px;
   line-height: 30px;
+}
+/* line 239, ../sass/admin.scss */
+.pagination > li > a.active {
   border-radius: 15px;
   color: #ffffff;
   background-color: #5d9edc;

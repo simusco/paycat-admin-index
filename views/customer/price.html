@@ -1,86 +1,102 @@
-<div class="container-fluid" ng-controller="PriceViewController">
-    <div class="panel panel-default">
-        <div class="panel-heading">设置价格</div>
-        <div class="panel-body">
-            <form class="form-horizontal">
-                <div class="form-group">
-                    <label class="col-sm-2 control-label">套餐名称：</label>
-                    <div class="col-sm-8">
-                        <input type="text" class="form-control" placeholder="例如：适合于电影院" ng-model="params.name">
+<div class="container-12" ng-controller="PriceViewController">
+    <div class="container-12 panel panel--default">
+        <div class="panel__title">设置价格</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">套餐名称：</span>
+                </div>
+                <div class="c12-col-10">
+                    <input type="text" class="form__control" placeholder="例如：适合于电影院" ng-model="params.name">
+                </div>
+            </div>
+
+            <div class="container-12 form"  ng-repeat="ep in params.prices">
+                <div class="c12-col-2">
+                    <span class="form__label">价格：</span>
+                </div>
+                <div class="c12-col-10">
+                    <div class="form-inline">
+                        <input type="text" class="form__control" placeholder="请输入主题" ng-model="ep.subject" style="width:20%">
+                        <input type="text" class="form__control" placeholder="请输入主题介绍" ng-model="ep.description" style="width:20%">
+                        <input type="text" class="form__control" placeholder="运行时间(单位分钟)" ng-model="ep.time"  style="width:20%">
+                        <input type="text" class="form__control" placeholder="价格（单位元）" ng-model="ep.price"  style="width:20%">
+                        <input type="button" class="button button__success" ng-click="delPrice(ep)" value="删除价格"/>
                     </div>
                 </div>
-                <div class="form-group" ng-repeat="ep in params.prices">
-                    <label class="col-sm-2 control-label">价格1：</label>
-                    <div class="col-sm-8">
-                        <div class="form-inline">
-                            <input type="text" class="form-control" placeholder="请输入主题" ng-model="ep.subject" style="width:20%">
-                            <input type="text" class="form-control" placeholder="请输入主题介绍" ng-model="ep.description" style="width:20%">
-                            <input type="text" class="form-control" placeholder="运行时间(单位分钟)" ng-model="ep.time"  style="width:20%">
-                            <input type="text" class="form-control" placeholder="价格（单位元）" ng-model="ep.price"  style="width:20%">
-                            <button type="button" class="btn btn-warning" ng-click="delPrice(ep)">删除价格</button>
-                        </div>
+            </div>
+
+            <div class="container-12 form">
+                <div class="c12-col-12 text-center">
+                    <div class="form-inline">
+                        <input type="button" class="button button__success" ng-click="addPrice()" value="添加价格"/>
+                        <input type="button" class="button button__success" ng-click="savePrice()" value="{{edit ? '修改套餐' : '保存套餐'}}"/>
+                        <input type="button" class="button button__default" ng-click="reset()" value="清空"/>
                     </div>
                 </div>
-                <div class="form-group">
-                    <div class="col-sm-2"></div>
-                    <div class="col-sm-10">
-                        <button type="button" class="btn btn-primary" ng-click="addPrice()">添加价格</button>
-                        <button type="button" class="btn btn-success" ng-click="savePrice()">{{edit ? '修改套餐' : '保存套餐'}}</button>
-                        <button type="button" class="btn btn-warning" ng-click="reset()">清空</button>
-                    </div>
-                </div>
-            </form>
+            </div>
         </div>
     </div>
-    <div class="panel panel-warning" ng-show="errmsg != null && errmsg != ''">
-        <div class="panel-heading">温馨提示：</div>
-        <div class="panel-body">
-            <div class="col-sm-8">{{errmsg}}</div>
-            <div class="col-sm-2"><button class="btn btn-info" ng-click="closeMsg()">知道了</button></div>
+
+    <div class="container-12 panel panel--default" ng-show="errmsg != null && errmsg != ''">
+        <div class="panel__title">温馨提示：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">温馨提示：</span>
+                </div>
+                <div class="c12-col-8">
+                    {{errmsg}}
+                </div>
+                <div class="c12-col-2">
+                    <input type="button" class="button button__success" ng-click="closeMsg()" value="知道了"/>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="panel panel-default">
-        <table class="table table-striped">
+
+    <div class="container-12 panel panel--default panel--last">
+        <table class="table">
             <thead>
-            <tr>
-                <th>套餐描述</th>
-                <th>价格详情</th>
-                <th>#</th>
-            </tr>
+                <tr>
+                    <th width="15%">套餐描述</th>
+                    <th width="70%">价格详情</th>
+                    <th width="15%">操作</th>
+                </tr>
             </thead>
             <tbody ng-show="shopPrices == null || shopPrices.length == 0">
-            <tr>
-                <td colspan="3" class="text-center">本店铺还未添加价格计划</td>
-            </tr>
+                <tr>
+                    <td colspan="3" class="text-center">本店铺还未添加价格计划</td>
+                </tr>
             </tbody>
             <tbody>
-            <tr ng-repeat="sp in shopPrices">
-                <td>{{sp.name}}</td>
-                <td>
-                    <table class="table table-condensed" ng-if="sp.type == 'TIME_PRICE'">
-                        <thead>
-                        <tr>
-                            <th>主题</th>
-                            <th>主题介绍</th>
-                            <th>运行时间（分）</th>
-                            <th>价格（元）</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr ng-repeat="p in sp.prices">
-                            <td>{{p.subject}}</td>
-                            <td>{{p.description}}</td>
-                            <td>{{p.time}}</td>
-                            <td>{{p.price}}</td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </td>
-                <td>
-                    <button type="button" class="btn btn-success" ng-click="editPrice(sp)" ng-show="sp.type == 'TIME_PRICE'">编辑套餐</button>
-                    <button type="button" class="btn btn-warning" ng-click="deletePrice(sp)">删除</button>
-                </td>
-            </tr>
+                <tr ng-repeat="sp in shopPrices">
+                    <td class="text-center">{{sp.name}}</td>
+                    <td>
+                        <table class="table" ng-if="sp.type == 'TIME_PRICE'">
+                            <thead>
+                            <tr>
+                                <th>主题</th>
+                                <th>主题介绍</th>
+                                <th>运行时间（分）</th>
+                                <th>价格（元）</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr ng-repeat="p in sp.prices">
+                                <td class="text-center">{{p.subject}}</td>
+                                <td class="text-center">{{p.description}}</td>
+                                <td>{{p.time}}</td>
+                                <td>{{p.price}}</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </td>
+                    <td>
+                        <input type="button" class="button button__success" ng-click="editPrice(sp)" ng-show="sp.type == 'TIME_PRICE'" value="编辑套餐"/>
+                        <input type="button" class="button button__success" ng-click="deletePrice(sp)" value="删除"/>
+                    </td>
+                </tr>
             </tbody>
         </table>
     </div>

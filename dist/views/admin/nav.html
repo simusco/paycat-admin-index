@@ -1,17 +1,44 @@
-<div class="container-12 p-navbar">
-    <div class="c12-span-4">
-        <div class="p-navbar-logo"><img src="/images/admin/logo.png"></div>
-    </div>
-    <div class="c12-span-4">
-        <div class="p-navbar-menu container-12">
-            <a ui-sref=".mantain" class="navbar-menu-item c12-span-6" ui-sref-active="navbar-menu-item--active">管理</a>
-            <a ui-sref=".statistics" class="navbar-menu-item c12-span-6" ui-sref-active="navbar-menu-item--active">统计</a>
+<div class="container-12 main">
+    <div class="c12-col-2 nav">
+        <div class="nav__top" ng-controller="UserViewController">
+            <img src="images/admin/head-icon.png" alt="">
+            <span>{{user.name}}</span>
+            <span>状态：已登录</span>
+        </div>
+        <div class="nav__body">
+            <div class="nav-item">
+                <span class="nav__item">管理</span>
+                <div class="menu">
+                    <a ui-sref=".mantain_cust" class="menu__item" ui-sref-active="menu__item--active">维护客户<img src="images/admin/a-icon.png"/></a>
+                    <a ui-sref=".mantain_equip" class="menu__item" ui-sref-active="menu__item--active">分配设备<img src="images/admin/a-icon.png"/></a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <span class="nav__item">财务</span>
+                <div class="menu">
+                    <a ui-sref=".appro_shop" class="menu__item" ui-sref-active="menu__item--active">提现<img src="images/admin/a-icon.png"/></a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <span class="nav__item">统计</span>
+                <div class="menu">
+                    <a ui-sref=".statistics_cust" class="menu__item" ui-sref-active="menu__item--active">客户收入<img src="images/admin/a-icon.png"/></a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="c12-span-4-last" ng-controller="UserViewController">
-        <div class="p-navbar-user">
-            <img src="/images/admin/user-head-icon.png"><a href="">{{user.name}}</a>
+    <div class="c12-col-10-last body">
+        <div class="container-12 login-bar">
+            <div class="c12-col-6 login-bar__left">
+                <img src="images/admin/long-logo.png" alt="">
+            </div>
+            <div class="c12-col-6-last login-bar__right">
+                <a href="">退出登录</a>
+            </div>
+        </div>
+
+        <div class="container-12 content" ui-view>
+
         </div>
     </div>
 </div>
-<section ui-view></section>

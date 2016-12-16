@@ -145,4 +145,4 @@ function($scope, $resource, $state, $interval, $cookies,$timeout,Pagination, API
     }
 }];
 
-module.exports = ctrl;
+export default ctrl;

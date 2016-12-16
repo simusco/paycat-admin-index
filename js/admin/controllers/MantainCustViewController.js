@@ -115,4 +115,4 @@ var ctrl = ['$scope','$resource', '$state', '$interval','$location', '$cookies',
     }
 }];
 
-module.exports = ctrl;
+export default ctrl;

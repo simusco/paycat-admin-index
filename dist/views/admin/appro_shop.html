@@ -1,0 +1,44 @@
+<div class="container-12"  ng-controller="ApproViewController">
+    <div class="container-12 panel panel--default" ng-show="errmsg != null && errmsg != ''">
+        <div class="panel__title">温馨提示：</div>
+        <div class="panel__body">
+            <div class="container-12 form">
+                <div class="c12-col-2">
+                    <span class="form__label">温馨提示：</span>
+                </div>
+                <div class="c12-col-8">
+                    {{errmsg}}
+                </div>
+                <div class="c12-col-2">
+                    <input type="button" class="button button__success" ng-click="closeMsg()" value="知道了"/>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-12 panel panel--default">
+        <div class="panel__body">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th width="30%">店铺名称</th>
+                    <th width="30%">属于商户</th>
+                    <th width="10%">提现次数</th>
+                    <th width="10%">提现金额</th>
+                    <th width="20%">操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr ng-repeat="c in appros">
+                    <td>{{c.shopName}}</td>
+                    <td>{{c.custName}}</td>
+                    <td>{{c.times}}</td>
+                    <td>{{c.money}}</td>
+                    <td>
+                        <input type="button" class="button button__success" ng-click="appro(c)" value="提现"/>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

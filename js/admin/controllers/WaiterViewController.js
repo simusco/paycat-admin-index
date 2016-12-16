@@ -171,6 +171,36 @@ function($scope, $cookies, API, $resource, $state, $timeout){
     $scope.closeMsg = function () {
         $scope.errmsg = null;
     }
+
+    $scope.logoff = function (waiter) {
+        $resource(API.ROOT+'/user/'+token+'/del/'+waiter.id,{}, {'update': { method:'PUT' }}).save(function(resp){
+            var code = resp.code;
+            var msg = resp.msg;
+
+            if(code == 100){
+                $scope.errmsg = '注销成功!';
+                $timeout(function () {
+                    $scope.errmsg = null;
+                },3000);
+
+                var waiters = $scope.waiters;
+                var index = -1;
+
+                for(var i=0;i<waiters.length;i++){
+                    if(waiters[i].id == waiter.id){
+                        index = i;
+                        break;
+                    }
+                }
+
+                if(index != -1){
+                    waiters.splice(index, 1);
+                }
+            }else{
+                $scope.errmsg = msg;
+            }
+        });
+    }
 }];
 
-module.exports = ctrl;
+export default ctrl;

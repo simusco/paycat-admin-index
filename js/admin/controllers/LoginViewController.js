@@ -39,11 +39,11 @@ var ctrl = ['$scope','$resource', '$state', '$rootScope', '$cookies', 'SocketSer
 				$cookies.put('roleId',data.roleId);
 
 				if(data.roleId == 1) {
-					$state.go('customer.statistics');
+					$state.go('customer.statistics_shop');
 				}else if(data.roleId == 2){
-					$state.go('shopper.statistics');
+					$state.go('shopper.statistics_shop');
 				}else if(data.roleId == 3){
-					$state.go('admin.mantain.equip');
+					$state.go('admin.mantain_equip');
 				}else if(data.roleId == 4){
 					$state.go('waiter.main');
 				}
@@ -59,4 +59,4 @@ var ctrl = ['$scope','$resource', '$state', '$rootScope', '$cookies', 'SocketSer
 
 }];
 
-module.exports = ctrl;
+export default ctrl;
