@@ -144,7 +144,7 @@
 
 	pa.service('API', function () {
 	    return {
-	        ROOT: 'http://localhost:8080'
+	        ROOT: 'http://api.shouyinmao.cn'
 	    };
 	});
 	pa.service('Pagination', function () {
@@ -184,7 +184,7 @@
 
 	pa.service('SocketService', ['$rootScope', '$cookies', function ($rootScope, $cookies) {
 	    var _socket = function () {
-	        var sc = _socket3.default.connect('http://localhost:8888');
+	        var sc = _socket3.default.connect('http://api.shouyinmao.cn:8888');
 	        return {
 	            on: function on(eventName, callback) {
 	                sc.on(eventName, function () {

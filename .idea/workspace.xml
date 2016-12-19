@@ -2,184 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dca8f438-4c56-4d50-9e8a-fe97c03d50fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/gulpfile.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/css/admin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/admin.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/base.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/base_d4d36df.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/bootstrap.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/normalize.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/order-detail.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/pay.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/style.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/swiper.all_eb5ebe2.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/a-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/add_equip.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/close-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/del-msg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/err-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/head-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/login-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/long-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/normal-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/not-use-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/s_menu_icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/uncon-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/user-head-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/admin/using-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/iPad.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/logo1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/logo2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/logo3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/logo4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/logo5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page-r.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page2-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page2-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page2-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page2-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page3-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page3-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page3-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page3-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page4-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page4-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page4-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page4-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page4-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-10.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-11.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-12.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-13.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-14.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-15.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page5-9.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page6-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page6-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page6-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page6-4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page6-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page6-bg.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/page8-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/phone.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/index/pk.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/4.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/6.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/7.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/8.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/banner1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/banner2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/banner3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/footer.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/website/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/bg-footer-split.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/bg-surplus-time.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/error-icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/logo-small.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/mahjong.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/od-footer-img.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/order-detail-logo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/images/wx/select-bar.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/admin.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/lib/html5.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/lib/jquery/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/lib/pingxx/pingpp.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/lib/respond.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/admin/cust_statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/admin/mantain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/admin/mantain_cust.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/admin/nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/admin/statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/cust_financial.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/cust_info.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/mantain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/price.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/setting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/shop.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/shop_assign_machine.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/shop_statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/customer/waiter.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/index.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/shopper/mantain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/shopper/nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/shopper/statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/signup.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/waiter/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/views/waiter/nav.html" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/dist/website.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/mantain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/admin/statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/customer/mantain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/customer/setting.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/customer/statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/shopper/mantain.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/shopper/statistics.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/views/signup.html" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/admin.html" afterPath="$PROJECT_DIR$/temp.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/admin.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/views/admin/mantain_equip.html" afterPath="$PROJECT_DIR$/views/admin/mantain_equip.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/views/admin/modify_cust.html" afterPath="$PROJECT_DIR$/views/admin/appro_shop.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/views/customer/equip_statistics.html" afterPath="$PROJECT_DIR$/views/customer/equip_statistics.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dist/views/customer/shop_equips_stats.html" afterPath="$PROJECT_DIR$/views/customer/shop_equips_stats.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/42fa8767729de03aedd3fcd85cede2c9fb9c7091/admin.scssc" afterPath="$PROJECT_DIR$/.sass-cache/42fa8767729de03aedd3fcd85cede2c9fb9c7091/admin.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/temp.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/website.html" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/index.html" afterPath="$PROJECT_DIR$/dist/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/admin.js" afterPath="$PROJECT_DIR$/dist/js/admin.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/views/admin/appro_shop.html" afterPath="$PROJECT_DIR$/dist/views/admin/appro_shop.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin.js" afterPath="$PROJECT_DIR$/js/admin.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/admin.js" afterPath="$PROJECT_DIR$/js/admin/admin.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/AssignEquipViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/AssignEquipViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/CustViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/CustViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/EquipStatisticsViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/EquipStatisticsViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/EquipViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/EquipViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/IndexViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/IndexViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/LoginViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/LoginViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/MantainCustViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/MantainCustViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/MantainEquipViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/MantainEquipViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/MsgViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/MsgViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/PriceViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/PriceViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/SettingViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/SettingViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/ShopStatisticsViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/ShopStatisticsViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/ShopViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/ShopViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/SignupViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/SignupViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/UserViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/UserViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/admin/controllers/WaiterViewController.js" afterPath="$PROJECT_DIR$/js/admin/controllers/WaiterViewController.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/admin.css" afterPath="$PROJECT_DIR$/sass/admin.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/admin.css.map" afterPath="$PROJECT_DIR$/sass/admin.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/admin.scss" afterPath="$PROJECT_DIR$/sass/admin.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/mantain_cust.html" afterPath="$PROJECT_DIR$/views/admin/mantain_cust.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/admin/nav.html" afterPath="$PROJECT_DIR$/views/admin/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/cust_financial.html" afterPath="$PROJECT_DIR$/views/customer/cust_financial.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/cust_info.html" afterPath="$PROJECT_DIR$/views/customer/cust_info.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/nav.html" afterPath="$PROJECT_DIR$/views/customer/nav.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/price.html" afterPath="$PROJECT_DIR$/views/customer/price.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/shop.html" afterPath="$PROJECT_DIR$/views/customer/shop.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/shop_assign_machine.html" afterPath="$PROJECT_DIR$/views/customer/shop_assign_machine.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/shop_statistics.html" afterPath="$PROJECT_DIR$/views/customer/shop_statistics.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/customer/waiter.html" afterPath="$PROJECT_DIR$/views/customer/waiter.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/login.html" afterPath="$PROJECT_DIR$/views/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/shopper/nav.html" afterPath="$PROJECT_DIR$/views/shopper/nav.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -199,7 +32,32 @@
     <favorites_list name="paycat-admin-index" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="209">
+              <caret line="377" column="10" lean-forward="true" selection-start-line="377" selection-start-column="10" selection-end-line="377" selection-end-column="10" />
+              <folding>
+                <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <element signature="n#div#1;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -211,8 +69,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>showPrices</find>
-      <find>shopPrices</find>
       <find>box-sizing</find>
       <find>__item</find>
       <find>table</find>
@@ -241,6 +97,8 @@
       <find>);</find>
       <find>appros</find>
       <find>forEach</find>
+      <find>webs</find>
+      <find>web</find>
     </findStrings>
     <replaceStrings>
       <replace>./controllers</replace>
@@ -251,14 +109,13 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="dummy://restClient/response2537.json" root0="SKIP_INSPECTION" />
+    <setting file="dummy://restClient/response17.json" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/dest/index.html" />
         <option value="$PROJECT_DIR$/webpack.config.js" />
-        <option value="$PROJECT_DIR$/website.html" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/views/admin/mantain_cust.html" />
         <option value="$PROJECT_DIR$/views/admin/statistics.html" />
@@ -292,8 +149,6 @@
         <option value="$PROJECT_DIR$/js/admin/controllers/AssignEquipViewController.js" />
         <option value="$PROJECT_DIR$/css/admin.css" />
         <option value="$PROJECT_DIR$/gulpfile.js" />
-        <option value="$PROJECT_DIR$/Gruntfile.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/admin.html" />
         <option value="$PROJECT_DIR$/sass/admin.scss" />
         <option value="$PROJECT_DIR$/views/customer/shop.html" />
@@ -303,10 +158,13 @@
         <option value="$PROJECT_DIR$/js/admin/controllers/MantainEquipViewController.js" />
         <option value="$PROJECT_DIR$/views/admin/nav.html" />
         <option value="$PROJECT_DIR$/js/admin/controllers/ApproViewController.s.js" />
-        <option value="$PROJECT_DIR$/js/admin/admin.js" />
         <option value="$PROJECT_DIR$/views/admin/appro_shop.html" />
         <option value="$PROJECT_DIR$/js/admin.js" />
         <option value="$PROJECT_DIR$/js/admin/controllers/ApproViewController.js" />
+        <option value="$PROJECT_DIR$/website.html" />
+        <option value="$PROJECT_DIR$/Gruntfile.js" />
+        <option value="$PROJECT_DIR$/js/admin/admin.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -346,6 +204,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -360,8 +220,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,6 +250,34 @@
   <component name="RestClientSettings">
     <option name="REQUEST_HISTORY">
       <list>
+        <RestClientRequest>
+          <option name="httpMethod" value="POST" />
+          <option name="urlBase" value="http://api.shouyinmao.cn" />
+          <option name="urlPath" value="/user/equip/MAC004999010640000/tick" />
+          <option name="headers">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="Accept" />
+                <option name="value" value="*/*" />
+              </KeyValuePair>
+              <KeyValuePair>
+                <option name="key" value="Cache-Control" />
+                <option name="value" value="no-cache" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parameters">
+            <list>
+              <KeyValuePair>
+                <option name="key" value="regid" />
+                <option name="value" value="1a0018970aa9e571b98" />
+              </KeyValuePair>
+            </list>
+          </option>
+          <option name="parametersEnabled" value="true" />
+          <option name="textToSend" value="" />
+          <option name="filesToSend" value="" />
+        </RestClientRequest>
         <RestClientRequest>
           <option name="httpMethod" value="POST" />
           <option name="urlBase" value="http://www.shouyinmao.cn" />
@@ -699,12 +585,14 @@
       <workItem from="1481247640536" duration="29529000" />
       <workItem from="1481504300147" duration="45349000" />
       <workItem from="1481700687853" duration="3878000" />
-      <workItem from="1481765036149" duration="13650000" />
+      <workItem from="1481765036149" duration="14953000" />
+      <workItem from="1481868852514" duration="3583000" />
+      <workItem from="1482110536634" duration="3125000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="163866000" />
+    <option name="totallyTimeSpent" value="171877000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -724,18 +612,18 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18614718" sideWeight="0.5021075" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30552545" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32936078" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25460455" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18959913" sideWeight="0.49789253" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18335089" sideWeight="0.5046604" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32900432" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -753,13 +641,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="65" column="20" lean-forward="false" selection-start-line="65" selection-start-column="20" selection-end-line="65" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/controllers/SettingViewController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="100" column="20" lean-forward="false" selection-start-line="100" selection-start-column="20" selection-end-line="100" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -789,13 +670,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="343">
           <caret line="154" column="20" lean-forward="false" selection-start-line="154" selection-start-column="20" selection-end-line="154" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/controllers/EquipStatisticsViewController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
         </state>
       </provider>
     </entry>
@@ -832,13 +706,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dist/css/admin.min.css" />
-    <entry file="file://$PROJECT_DIR$/website.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="9" lean-forward="false" selection-start-line="21" selection-start-column="9" selection-end-line="21" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/website.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -890,13 +757,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="23" column="6" lean-forward="true" selection-start-line="23" selection-start-column="6" selection-end-line="23" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dist/js/admin.min.js" />
     <entry file="file://$PROJECT_DIR$/dist/js/admin.js">
       <provider selected="true" editor-type-id="text-editor">
@@ -923,13 +783,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="38">
           <caret line="2" column="20" lean-forward="true" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="14" column="0" lean-forward="true" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -961,18 +814,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="514">
-          <caret line="95" column="40" lean-forward="true" selection-start-line="95" selection-start-column="40" selection-end-line="95" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/views/admin/mantain_equip.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="384">
           <caret line="56" column="86" lean-forward="false" selection-start-line="56" selection-start-column="86" selection-end-line="56" selection-end-column="86" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -980,7 +825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="431">
           <caret line="66" column="27" lean-forward="true" selection-start-line="66" selection-start-column="27" selection-end-line="66" selection-end-column="27" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -988,7 +832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="228">
           <caret line="12" column="40" lean-forward="false" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -996,17 +839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="31" column="5" lean-forward="true" selection-start-line="31" selection-start-column="5" selection-end-line="31" selection-end-column="5" />
-          <folding>
-            <element signature="e#0#30#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1014,7 +846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="126" column="48" lean-forward="true" selection-start-line="126" selection-start-column="24" selection-end-line="126" selection-end-column="48" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1022,7 +853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="54" lean-forward="true" selection-start-line="0" selection-start-column="54" selection-end-line="0" selection-end-column="54" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1030,15 +860,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="148" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/controllers/AssignEquipViewController.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="179" column="22" lean-forward="true" selection-start-line="179" selection-start-column="22" selection-end-line="179" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1046,15 +867,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="545">
           <caret line="83" column="20" lean-forward="false" selection-start-line="83" selection-start-column="20" selection-end-line="83" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="209">
-          <caret line="590" column="28" lean-forward="false" selection-start-line="590" selection-start-column="28" selection-end-line="590" selection-end-column="28" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1062,15 +874,92 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="469">
           <caret line="96" column="41" lean-forward="true" selection-start-line="96" selection-start-column="16" selection-end-line="96" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin.js" />
+    <entry file="file://$PROJECT_DIR$/js/admin/controllers/ApproViewController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="798">
+          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin/controllers/SettingViewController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="18" column="44" lean-forward="false" selection-start-line="18" selection-start-column="44" selection-end-line="18" selection-end-column="44" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/admin/controllers/ApproViewController.js">
+    <entry file="file://$PROJECT_DIR$/js/admin/controllers/EquipStatisticsViewController.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="42" column="53" lean-forward="true" selection-start-line="42" selection-start-column="53" selection-end-line="42" selection-end-column="53" />
+        <state relative-caret-position="605">
+          <caret line="73" column="20" lean-forward="false" selection-start-line="73" selection-start-column="20" selection-end-line="73" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin/controllers/AssignEquipViewController.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="21" column="38" lean-forward="false" selection-start-line="21" selection-start-column="38" selection-end-line="21" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/website.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2458">
+          <caret line="458" column="39" lean-forward="false" selection-start-line="458" selection-start-column="39" selection-end-line="458" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/admin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="551">
+          <caret line="29" column="7" lean-forward="true" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gruntfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="259">
+          <caret line="96" column="28" lean-forward="false" selection-start-line="96" selection-start-column="28" selection-end-line="96" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/admin/admin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1067">
+          <caret line="71" column="16" lean-forward="true" selection-start-line="71" selection-start-column="16" selection-end-line="71" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="377" column="10" lean-forward="true" selection-start-line="377" selection-start-column="10" selection-end-line="377" selection-end-column="10" />
+          <folding>
+            <element signature="n#head#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#6;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#7;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#8;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#div#9;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>

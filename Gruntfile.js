@@ -10,7 +10,7 @@ module.exports = function (grunt) {
             },
             html:{
                 files:[
-                    {expand: true,src: ['website.html','index.html','admin.html'],dest: 'dist/'},
+                    {expand: true,src: ['index.html','admin.html'],dest: 'dist/'},
                     {expand:true,cwd: 'views',src:['**/*.html'],dest:'dist/views/',flatten: false}
                 ]
             },
@@ -87,7 +87,7 @@ module.exports = function (grunt) {
         },
         watch: {
             html:{
-                files: ['./views/**/*.html','website.html','index.html','admin.html'],
+                files: ['./views/**/*.html','index.html','admin.html'],
                 options: {
                     livereload: true
                 }

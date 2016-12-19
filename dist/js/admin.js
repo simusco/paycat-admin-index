@@ -144,7 +144,7 @@
 
 	pa.service('API', function () {
 	    return {
-	        ROOT: 'http://localhost:8080'
+	        ROOT: 'http://api.shouyinmao.cn'
 	    };
 	});
 	pa.service('Pagination', function () {
@@ -184,7 +184,7 @@
 
 	pa.service('SocketService', ['$rootScope', '$cookies', function ($rootScope, $cookies) {
 	    var _socket = function () {
-	        var sc = _socket3.default.connect('http://localhost:8888');
+	        var sc = _socket3.default.connect('http://api.shouyinmao.cn:8888');
 	        return {
 	            on: function on(eventName, callback) {
 	                sc.on(eventName, function () {
@@ -58861,6 +58861,34 @@
 	            $scope.errmsg = msg;
 	        }
 	    });
+
+	    $scope.appro = function (appro) {
+	        $resource(API.ROOT + '/appro', { token: token, shopId: appro.shopId }, { 'update': { method: 'PUT' } }).save(function (resp) {
+	            var code = resp.code;
+	            var msg = resp.msg;
+	            var data = resp.result;
+
+	            if (code == 100) {
+	                $scope.errmsg = '操作成功!';
+	                $timeout(function () {
+	                    $scope.errmsg = null;
+	                }, 3000);
+
+	                var index = -1;
+	                for (var x = 0; x < $scope.appros.length; x++) {
+	                    if ($scope.appros[x].shopId == appro.shopId) {
+	                        index = x;
+	                    }
+	                }
+
+	                if (index != -1) {
+	                    $scope.appros.splice(index, 1);
+	                }
+	            } else {
+	                $scope.errmsg = msg;
+	            }
+	        });
+	    };
 	}];
 
 /***/ }

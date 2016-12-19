@@ -28,7 +28,7 @@ var pa = angular.module('PaycatAdmin',['ui.router','ngResource','ngCookies']);
 
 pa.service('API',function () {
     return {
-        ROOT:'http://localhost:8080'
+        ROOT:'http://api.shouyinmao.cn'
     }
 });
 pa.service('Pagination',function () {
@@ -68,7 +68,7 @@ pa.service('Pagination',function () {
 
 pa.service('SocketService', ['$rootScope', '$cookies', function($rootScope, $cookies){
     var _socket = (function(){
-        var sc = socketio.connect('http://localhost:8888');
+        var sc = socketio.connect('http://api.shouyinmao.cn:8888');
         return {
             on: function(eventName, callback) {
                 sc.on(eventName, function() {
